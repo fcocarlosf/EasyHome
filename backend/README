@@ -1,0 +1,5 @@
+> ## INICIANDO
+> 1. npm install
+> 2. Criar a .env
+> 3. ajustar o link do banco de dados
+> 4. npx prisma migrate dev --name init
