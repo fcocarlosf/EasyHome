@@ -286,7 +286,7 @@ module.exports = class ProfessionalControllers {
             return
         }
 
-        const { name, cpf, email, phone, whatsapp, password, confirmpassword } = req.body
+        const { name, cpf, brief_description, email, phone, whatsapp, password, confirmpassword } = req.body
 
         if (req.file) {
             professional.image = req.file.filename
@@ -331,6 +331,8 @@ module.exports = class ProfessionalControllers {
         professional.email = email
 
         professional.cpf = cpf
+
+        professional.brief_description = brief_description
 
         professional.phone = phone
 
